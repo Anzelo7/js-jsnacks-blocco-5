@@ -35,6 +35,10 @@ teams.forEach((element) => {
     console.log(element);
 });
 
+function getRandomNumber(min, max) {
+    const range = max - min + 1
+    return Math.floor(Math.random() * range) + min;
+}
 
 /* SNACK 2*/
 /*
