@@ -61,6 +61,8 @@ function createNewArray(arr, num1, num2) {
     }
 }
 
+let num1 = 2;
+let num2 = 23;
 const array = [2, 5, 8, 5, 4, 9,];
 createNewArray(array, 1, 20);
 console.log(createNewArray(array, 1, 20));
@@ -73,3 +75,43 @@ console.log(createNewArray(array, 1, 20));
  * Infine stampa separatamente quanto pesano i due gruppi di zucchine.
  */
 
+const zucchina = {
+    color: 'green',
+    length: 0,
+}
+
+const zucchine = [];
+
+
+console.log(zucchine);
+
+function propertyFilter(arrayOfObjects, property, filterValue) {
+    const filterArray1 = [];
+    const filterArray2 = [];
+
+    arrayOfObjects.forEach((object) => {
+        if (object[property] <= filterValue) {
+            filterArray1.push(object);
+        }
+        else if (object[property] > filterValue) {
+            filterArray2.push(object);
+        }
+    })
+
+    return [filterArray1, filterArray2];
+}
+
+let zucchineBySize = propertyFilter(zucchine, 'length', 15)
+console.log('Zucchine piu corte di 15', zucchineBySize[0]);
+console.log('Zucchine piu lunghe di 15', zucchineBySize[1]);
+
+
+
+
+// RESULTS
+for (let i = 0; i < exercise.length; i++) {
+    const result = document.createElement('p');
+    result.classList.add('result');
+    result.innerHTML = exercise[i];
+    liveCoding.append(result);
+}
