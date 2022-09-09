@@ -81,6 +81,19 @@ const zucchina = {
 const zucchine = [];
 
 
+zucchine.push({ ...zucchina, length: 10 });
+zucchine.push({ ...zucchina, length: 12 });
+zucchine.push({ ...zucchina, length: 15 });
+zucchine.push({ ...zucchina, length: 20 });
+zucchine.push({ ...zucchina, length: 10 });
+zucchine.push({ ...zucchina, length: 12 });
+zucchine.push({ ...zucchina, length: 18 });
+zucchine.push({ ...zucchina, length: 19 });
+zucchine.push({ ...zucchina, length: 11 });
+zucchine.push({ ...zucchina, length: 17 });
+zucchine.push({ ...zucchina, length: 9 });
+
+
 console.log(zucchine);
 
 function propertyFilter(arrayOfObjects, property, filterValue) {
