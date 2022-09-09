@@ -61,9 +61,7 @@ function createNewArray(arr, num1, num2) {
     }
 }
 
-let num1 = 2;
-let num2 = 23;
-const array = [2, 5, 8, 5, 4, 9,];
+const array = [2, 5, 8, 5, 4, 9];
 createNewArray(array, 1, 20);
 console.log(createNewArray(array, 1, 20));
 
